@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+        <script type="text/javascript" src="js/jquery.js"></script>
+        <script type="text/javascript" src="js/bootstrap.js"> </script>
+    </head>
+    <body style="background-color: rgb(209, 205, 205);">
+        <ul class="nav">
+            <li>
+            <img src="logo-ead.png" alt="logo" style="width:150px; height:50px; padding: 7px;">
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="home.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="profile.html">Profile</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="product.html">Products</a>
+            </li>
+          </ul>
+
+          <div class="container" style="width: 70%;">
+            <div class="row">
+              <div class="col" style="background-color: rgb(160, 168, 172); padding-top: 7%;">
+                <iframe src="https://www.youtube.com/embed/AwMeQJ_u73I" style="width: 100%; height: 80%; margin: auto; border: none;"></iframe>
+              </div>
+              <div class="col">
+                  <h5 style="text-align: center;"><b>Registrasi Data Pelanggan</b></h5>
+                <form style="margin-left: 4%;">
+                    <table style="height: 20em;">
+                        <tr>
+                            <td>Nama</td>
+                            <td><input type="text" class="form-control" placeholder="inputkan nama anda" id="nama" name="nama" value="nama" ></td>
+                        </tr>
+                        <tr>
+                            <td>Nomor HP</td>
+                            <td><input type="text" class="form-control" id="noTelp" value="noTelp"></td>
+                        </tr>
+                        <tr>
+                            <td>Alamat</td>
+                            <td><textarea class="form-control" id="alamat"></textarea></td>
+                        </tr>
+                        <tr>
+                            <td>Pembayaran</td>
+                            <td><input type="radio" id="cash" name="pembayaran" value="cash"><label for="cash"> Cash</label>
+                            <input type="radio" id="credit" name="pembayaran" value="credit"><label for="credit"> Credit</label></td>
+                        </tr>
+                        <tr>
+                            <td>Kategori Pesanan</td>
+                            <td><select class="form-control">
+                                <option>Keyboard</option>
+                                <option>Komputer</option>
+                                <option>Mouse</option>
+                            </select></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" style="margin-bottom: 4%;"><button type="button" class="btn btn-primary">Kirim</button></td>
+                        </tr>
+                    </table>    
+                </form>
+              </div>
+            </div>
+          </div>
+
+          
+    </body>
+</html>
