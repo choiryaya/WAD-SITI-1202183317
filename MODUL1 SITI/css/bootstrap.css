@@ -4225,6 +4225,7 @@ input[type="button"].btn-block {
   list-style: none;
 }
 
+
 .nav-link {
   display: block;
   padding: 0.5rem 1rem;
@@ -4233,7 +4234,9 @@ input[type="button"].btn-block {
 .nav-link:hover, .nav-link:focus {
   text-decoration: none;
 }
-
+.nav-link.visited{
+    color: rgb(255, 255, 255);
+}
 .nav-link.disabled {
   color: #6c757d;
   pointer-events: none;
@@ -4256,6 +4259,7 @@ input[type="button"].btn-block {
 
 .nav-tabs .nav-link:hover, .nav-tabs .nav-link:focus {
   border-color: #e9ecef #e9ecef #dee2e6;
+  
 }
 
 .nav-tabs .nav-link.disabled {
