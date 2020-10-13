@@ -33,13 +33,13 @@
     <div class="container">
         <div class="row" style="padding-top: 20px; ">
             <div class="col-md-4 offset-md-1">
-                <form action="myBooking.php" method="post">
+                <form action="myBooking.php" method="get">
                     <table style="width:100%">
                         <tr>
                             <td>Name</td>
                         </tr>
                         <tr>
-                            <td> <input type="text" class="form-control" name="name">
+                            <td> <input type="text" class="form-control" name="nama">
                             </td>
                         </tr>
                         <tr>

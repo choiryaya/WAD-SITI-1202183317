@@ -44,7 +44,7 @@
         <td><?php echo date('Y-m-d', strtotime($date . ' + ' . $duration . ' days'));; ?>
         </td>
         <td><?php echo $room; ?></td>
-        <td><?php echo $phone; ?></td>
+        <td><?php echo $handphone; ?></td>
         <td><?php
 
         $a = $service=="roomService" && $service=="breakfast";
