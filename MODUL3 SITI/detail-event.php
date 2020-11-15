@@ -60,7 +60,6 @@
                                 <button class="btn btn-danger">Delete</button>
                             </a>
                         </div>
-
                 
                 </div>
             </div>

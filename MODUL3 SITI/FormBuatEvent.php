@@ -117,7 +117,6 @@
               </div>
 
               <a class="btn btn-danger float-right ml-1" href="home.php" >Cancel</a>
-           
               <button type="submit" class="btn btn-primary ml-1 float-right" style="width: 20%;">Submit</button>
             </div>
           </div>
