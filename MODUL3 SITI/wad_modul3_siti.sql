@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 15, 2020 at 12:07 PM
+-- Generation Time: Nov 15, 2020 at 01:11 PM
 -- Server version: 10.4.11-MariaDB
 -- PHP Version: 7.4.3
 
@@ -21,6 +21,8 @@ SET time_zone = "+00:00";
 --
 -- Database: `wad_modul3_siti`
 --
+CREATE DATABASE IF NOT EXISTS `wad_modul3_siti` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
+USE `wad_modul3_siti`;
 
 -- --------------------------------------------------------
 
@@ -43,6 +45,13 @@ CREATE TABLE `event_table` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
+-- Dumping data for table `event_table`
+--
+
+INSERT INTO `event_table` (`id`, `name`, `deskripsi`, `gambar`, `kategori`, `tanggal`, `mulai`, `berakhir`, `tempat`, `harga`, `benefit`) VALUES
+(26, 'ria', 'skfj', '1816091623_Screenshot (362).png', 'offline', '2020-11-18', '03:00:00', '01:00:00', 'sds', 121111, 'sertifikat');
+
+--
 -- Indexes for dumped tables
 --
 
@@ -60,7 +69,7 @@ ALTER TABLE `event_table`
 -- AUTO_INCREMENT for table `event_table`
 --
 ALTER TABLE `event_table`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=25;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=27;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

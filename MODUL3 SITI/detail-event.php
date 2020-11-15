@@ -55,7 +55,7 @@
                         </div>
 
                         <div class="text-center">
-                            <button class="btn btn-primary" data-toggle="modal" data-target="#modalEdit">Edit</button>
+                            <button class="btn btn-primary" data-toggle="modal" data-target="#modalEdit" style="width: 7%;">Edit</button>
                             <a href="crud/deleteEvent.php?id=<?= $event["id"] ?>">
                                 <button class="btn btn-danger">Delete</button>
                             </a>
@@ -190,7 +190,7 @@
                         </div>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-danger float-right" data-dismiss="modal">Cancel</button>
-                            <button type="submit" class="btn btn-primary float-right">Save Change</button>
+                            <button type="submit" class="btn btn-primary float-right" style="width: 13%;">Save Change</button>
                         </div>
                     </div>
             </form>

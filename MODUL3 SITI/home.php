@@ -42,7 +42,7 @@
             </div>
             <div class="card-footer">
               <a href="detail-event.php?id=<?= $select['id'] ?>">
-                <button class="btn btn-primary float-right">Detail</button>
+                <button type="button" class="btn btn-primary float-right" style="width: 25%;">Detail</button>
               </a>
             </div>
           </div>
