@@ -55,6 +55,7 @@
                 </div>
             </div>
             <div class="card">
+                
                 <img src="luxury.jpg" class="card-img-top" alt="luxury" name="img" style="height:30%">
                 <div class="card-body" style="text-align:center;">
                     <h5 class="card-title" style="text-align: center;">Luxury</h5>
