@@ -23,7 +23,7 @@
     <div class="row" style="padding-bottom: 60px; padding-top:40px;">
 
       <?php
-      include('config.php');
+      include('conn.php');
       $query = "SELECT id, name, kategori, gambar, tanggal, tempat FROM event_table";
       $selects = mysqli_query($conn, $query);
       $empty = true;
