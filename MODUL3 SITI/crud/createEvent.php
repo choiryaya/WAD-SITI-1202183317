@@ -23,7 +23,7 @@ if (!in_array($ext, $ekstensi)) {
     if ($ukuran < 1044070) {
         $gambar = $rand . '_' . $gambar;
         move_uploaded_file($_FILES['gambar']['tmp_name'], '../gambar/' . $gambar);
-        $query = "INSERT into event_table(name, deskripsi, gambar, kategori, tanggal, mulai, berakhir, tempat, harga, benefit)
+        $query = "INSERT into event_tabel(name, deskripsi, gambar, kategori, tanggal, mulai, berakhir, tempat, harga, benefit)
             values ('$name', '$deskripsi', '$gambar', '$kategori', '$tanggal', '$mulai', '$berakhir', '$tempat', '$harga', '$benefit')";
         $insert = mysqli_query($conn, $query);
         header("location:../home.php");
