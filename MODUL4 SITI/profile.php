@@ -47,27 +47,27 @@ if (!isset($_SESSION["login"])) {
             <div class="form-group row">
                 <label for="email" class="col-sm-2 col-form-label">Email</label>
                 <div class="col-sm-10">
-                    <input type="text" readonly class="form-control-plaintext" id="email" value="<?php echo $_SESSION['email']; ?>">
+                    <input type="text" readonly class="form-control-plaintext" id="email" name="email" value="<?php echo $_SESSION['email']; ?>">
                 </div>
             </div>
             <div class="form-group row">
                 <label for="nama" class="col-sm-2 col-form-label">Nama</label>
                 <div class="col-sm-10">
-                    <input type="text" class="form-control" id="nama"  value="<?php echo $_SESSION['nama']; ?>">
+                    <input type="text" class="form-control" id="nama" name="nama" value="<?php echo $_SESSION['nama']; ?>">
                 </div>
             </div>
 
             <div class="form-group row">
                 <label for="no_hp" class="col-sm-2 col-form-label">Nomor Handphone</label>
                 <div class="col-sm-10">
-                    <input type="no_hp" class="form-control" id="no_hp"  value="<?php echo $_SESSION['no_hp']; ?>">
+                    <input type="no_hp" class="form-control" id="no_hp" name="no_hp" value="<?php echo $_SESSION['no_hp']; ?>">
                 </div>
             </div>
             <hr>
             <div class="form-group row">
                 <label for="password" class="col-sm-2 col-form-label">Password</label>
                 <div class="col-sm-10">
-                    <input type="password" class="form-control" id="password">
+                    <input type="password" class="form-control" id="password" name="password">
                 </div>
             </div>
             <div class="form-group row">

@@ -21,31 +21,15 @@ $cookie_value = $_POST['warna'];
 setcookie($cookie_name, $cookie_value);
 
 if (isset($_POST['update'])) {
- // code...
-        if ($password != "") {
-                if($password==$passwords){ // kondisi jika password = password2
-                                        //$password = password_hash($password, PASSWORD_DEFAULT);
-                                                $update = mysqli_query($conn, "UPDATE user SET 
-                                                nama ='$nama', 
-                                                no_hp ='$no_hp', 
-                                                password='$password' 
-                                                WHERE id = '$id'");
-                                            
-                                                        if(!$update){
-                                                                    die ("Query gagal dijalankan: ".mysqli_errno($conn).
-                                                                        " - ".mysqli_error($conn));
-                                                                } else {
-                                                                    header( "refresh:0;url=../profile.php?message=updated" );
-                                                                }
-                }
-                else{ // sebaliknya, jika password tidak sama dengan konfirm password
-                   header( "refresh:0;url=../profile.php?message=notmatch" );
-                } 
+    if ($nama  != ""  && $no_hp != "" && $password != "")
+        mysqli_query($conn, "UPDATE user SET nama ='$nama', no_hp ='$no_hp', password='$password' WHERE id = '$id'");
 
-        } else{
-            header( "refresh:0;url=../profile.php?message=please" );
-        }
-} 
+    $_SESSION['nama'] = $nama;
+
+
+
+    header('Location: ../profile.php?msg=Berhasil Update');
+}
 
 ?>
 
