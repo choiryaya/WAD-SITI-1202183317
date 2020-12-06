@@ -26,8 +26,6 @@ if (isset($_POST['update'])) {
 
     $_SESSION['nama'] = $nama;
 
-
-
     header('Location: ../profile.php?msg=Berhasil Update');
 }
 
