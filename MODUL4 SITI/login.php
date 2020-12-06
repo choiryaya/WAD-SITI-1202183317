@@ -1,6 +1,6 @@
 <?php
 session_start();
-require 'crud/config.php';
+require 'crud/conn.php';
 $alert = "";
 //cek cookie
 if (isset($_COOKIE['id']) && isset($_COOKIE['key'])) {

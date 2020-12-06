@@ -1,7 +1,7 @@
 <?php
-session_start();
+session_destroy();
 include "crud/config.php";
-if (!isset($_SESSION["login"])) {
+if (isset($_SESSION["login"])) {
     header("Location: login.php");
     exit;
 }
